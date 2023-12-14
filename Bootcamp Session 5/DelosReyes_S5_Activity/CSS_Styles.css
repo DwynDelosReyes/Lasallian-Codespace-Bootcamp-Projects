@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cheguevara Text Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    padding-top: 140px;
+    padding-bottom: 50px;
+    border-bottom: 10px solid #cd2028;
+    background-color: #edeae1;
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    max-width: 130px;
+    display: block;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: absolute; /* Absolute Position */
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    border: 1px solid #000000;
+}
+
+header h1 {
+    letter-spacing: 7px;
+    font-size: 24px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 5px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+/* Unordered lists */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #1b2651;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky; /* Sticky Position */
+    width: 100%;
+}
+
+/* Navbar */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 4;
+    background-color: #1b2651;
+    position: sticky; /* Sticky Position */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    transition: color 0.3s, transform 0.3s;
+}
+.navbar a:hover {
+    color: #edeae1;
+    transform: scale(1.2);
+}
+
+/* Tagline Section */
+#tagline {
+    background-image: url('tommy-hilfiger.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0px;
+    text-align: center;
+    color: white;
+    padding: 150px 0;
+}
+
+.tagline-text {
+    font-size: 54px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.tagline-hashtag {
+    font-size: 48px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Labels for pictures */
+li {
+    float: left;
+    text-transform: uppercase;
+}
+
+/* Background */
+.main-background {
+    background-color: #fff;
+    padding: 20px;
+    position: relative; /* Relative position */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    position: static; /* Static position */
+}
+
+section {
+    padding: 20px;
+    position: relative; /* Relative position */
+}
+
+section h2 {
+    color: #166c96;
+}
+
+/* Chat Button */
+.open-button {
+    background-color: #555;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed; /* Fixed Position */
+    z-index: 5;
+    bottom: 23px;
+    right: 28px;
+    width: 80px;
+    transition: transform 0.2s;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed; /* Fixed Position */
+    bottom: 19px;
+    right: 15px;
+    border: none;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    border-radius: 50px;
+    border: none;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .form-container h1 {
+    margin-top: 0;
+    border-bottom: 0px;
+    border-top: 0px;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: rgb(0, 192, 35);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom:10px;
+    opacity: 0.8;
+    transition: transform 0.2s;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    padding: 10px 15px;
+    background-color: rgb(176, 0, 0);
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+
+/* Pictures for Collection */
+.collection {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    position: relative; /* Relative position */
+}
+
+.collection-item {
+    text-align: center;
+    margin: 10px;
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.collection-item img {
+    border-radius: 8px;
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    box-shadow: 5px 5px 3px rgb(15, 14, 14);
+    transition: transform 0.2s; 
+}
+
+.collection-item:hover img {
+    transform: scale(1.2); 
+}
+
+/* Contact page */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    position: relative; /* Relative position */
+}
+
+ul.contact {
+    padding: 0px;
+    background-color: #edeae1;
+}
+
+.contact-item {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    position: relative; /* Relative position */
+}
+
+.contact-item img {
+    width: 20%; 
+    height: auto; 
+    object-fit: contain; 
+    transition: transform 0.2s; 
+}
+
+.contact-item:hover img {
+    transform: scale(1.2); 
+}
+
+.contact-item p {
+    color: #000000;
+}
+
+#contact {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 10px solid #cd2028;
+    color: #000000;
+    background-color: #edeae1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin: 0%;
+}
