@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+}
+  
+#container-0 {
+  height: 65px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-1 {
+  height: 65px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-1 {
+  margin: 5px 5px;
+}
+
+#container-2 {
+  height: 65px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container-3 {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#super-container-0 {
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#container-4 {
+  height: 100px;
+  border: 1px solid black;
+  flex-grow: 0.16; /* Allow container-4 to grow and maximize horizontal space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-5 {
+  height: 100px;
+  border: 1px solid black;
+  flex-grow: 1; /* Allow container-5 to grow and maximize horizontal space */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container-6 {
+  height: 65px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container-7 {
+  height: 65px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  margin: 0%;
+}
