@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-conic-gradient(#333333 0deg, #666666 60deg, #444444 120deg, #555555 180deg, #222222 240deg); /* Another gradient background design */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1.7; /* Adjusts the spacing of each line of sentences */
+}
+
+/* Horizontal Image Slideshow */
+.gallery {
+    width: 100%;
+    overflow-x: auto; /* For scroll bar */
+}
+  
+.gallery::-webkit-scrollbar { /* For scroll bar */
+    width: 10px;
+    height: 10px;
+    background-color: #f5f5f5;
+}
+  
+.gallery::-webkit-scrollbar-thumb { /* For scroll bar */
+    background-color: #217ba8;
+    border-radius: 5px;
+}
+  
+.gallery::-webkit-scrollbar-thumb:hover { /* For scroll bar */
+    background-color: #217ba8;
+}
+  
+.scrolling-images {
+    display: inline-block;
+    white-space: nowrap;
+    align-items: center;
+}
+  
+.scrolling-images img {
+    display: inline-block;
+    width: auto;
+    height: 250px;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #217ba8;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction section */
+#Introduction {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Adds circular border effect */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+/* Job Form sections */
+.section2, .section3, .section4, .section5 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Other sections */
+.section6 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 95%;
+    text-align: center;
+}
+
+.section6 img {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section7 {
+    background-color: #217ba8;
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: max-content;
+    text-align: center;
+}
+
+.section7 img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
+  
+.section7 img:hover {
+    opacity: 0.9; /* Changes opacity of the image when hovered */
+    transform: scale(1.2);
+}
+
+/* Table labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input fields for Forms */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Table Part of the sections */
+table {
+    border-collapse: collapse; /* Removes the border for the table */
+}
+td {
+    width: 500px; /* Set the width of each cell */
+    height: 40px; /* Set the height of each cell */
+}
+
+/* Style radio inputs and their labels to stay inline */
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Style the legend */
+legend {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Download button */
+#downloadButton {
+    background-color: #217ba8;
+    color: #fff;
+    font-size: medium;
+    padding: 10px 20px;
+    border: none; /* Remove the border to make it a simple button */
+    border-radius: 5px;
+    width: 120px; /* Set the initial width */
+    height: 50px; /* Set the initial height */
+    transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s, letter-spacing 0.3s; /* Smooth transitions for all properties */
+}
+
+#downloadButton:hover {
+    background-color: #ffffff;
+    color: #007BFF;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Changes the text to uppercase then hovered */
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+#downloadButton::before {
+    font-size: 48px;
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s; /* Smooth transition for checkmark appearance */
+}
+
+#downloadButton:hover::before {
+    opacity: 1; /* Changes opacity of the image when hovered */
+}
+
+#downloadButton:active {
+    background-color: #00ae2094; /* Restore original background color when clicked */
+    color: #fff; /* Restore original text color when clicked */
+}
+
+/* Navbar Styles */
+.topbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Add CSS styles for the navigation bar */
+.topbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #075977;
+    color: white;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px; /* Add some spacing between the links */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and scale */
+}
+
+.navbar a:hover {
+    color: #007BFF; /* Change text color on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* For the contents */
+.content {
+    padding: 20px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 1s;
+}
+
+.content a:hover {
+    color: #075977;
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth; /* Gives smoothness to the scrolling effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin: 0%;
+}

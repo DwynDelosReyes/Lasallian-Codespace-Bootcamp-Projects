@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 4</title>
+    <link rel="stylesheet" href="CSS_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="#Form_Name">Application Form</a>
+        <a href="#About">About the Company</a>
+        <a href="#Contact">Social Media Sites</a>
+    </div>
+
+    <!-- Introduction -->
+    <section class = "section1" id = "Introduction">
+        <h2>Welcome to International Computer Company</h2>
+        <img src="computerlogo.png" alt="International Computer Company Logo">
+        <p>
+            Welcome to the International Computer Company's online job application portal! We appreciate your interest in joining our team. We value diversity and inclusion, and we look forward to learning more about your unique skills and experiences. Best of luck with your application process, and we can't wait to see how you can contribute to our success!
+        </p><br />
+        <div class="gallery">
+            <div class="scrolling-images">
+                <img src="icc1.jpg" alt="Image 1">
+                <img src="icc2.jpg" alt="Image 2">
+                <img src="icc3.jpg" alt="Image 3">
+                <img src="icc4.jpg" alt="Image 4">
+                <img src="icc5.jpg" alt="Image 5">
+                <img src="icc6.jpg" alt="Image 6">
+                <img src="icc7.jpg" alt="Image 7">
+            </div>
+    </section>
+
+    <!-- Form_Name -->
+    <section class = "section2" id = Form_Name>
+    <h2>Job Application Form</h2>
+        <label for="surname">Surname:</label>
+            <input type="text" placeholder="Dela Cruz" id="surname" />
+                <br />
+        <label for="firstname">Firstname:</label>
+            <input type="text" placeholder="Juan" id="firstname" />
+                <br />
+        <label for="lastname">Middle Name:</label>
+            <input type="text" placeholder="Santiago" id="middlename" />
+                <br />
+        <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="Male"/>
+                <br />
+        <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="Female" />
+                <br />
+    </section>
+
+    <!-- Form_Age -->
+    <section class = "section3" id = Form_Age>
+        <label for="age">Age:</label>
+            <input type="number" placeholder="Select your age" id="age" min="18" max="75" />
+                <br />
+        <label for="birthdate">Birthdate:</label>
+            <input type="date" placeholder="Birthdate" id="birthdate" />
+                <br />
+    </section> 
+
+    <!-- Form_Contact -->
+    <section class = "section4" id = Form_Contact>
+        <label for="email">Email Address:</label>
+            <input type="email" placeholder="juandelacruz@mail.com" id="email" />
+                <br />
+        <label for="number">Mobile Number:</label>
+            <input type="text" placeholder="0000-000-0000" id="mobile" />
+                <br />
+        <label for="number2">Landline Number:</label>
+            <input type="text" placeholder="000-0000" id="landline" />
+                <br />
+        <label for="address">Address:</label>
+            <input type="email" placeholder="Block Lot, Street, Subdivision, Barangay, Municipality, Region" id="address" />
+                <br />
+    </section>
+
+    <!-- Form_Job -->
+    <section class = "section5" id = Form_Job>
+        <legend>Join our team! Please choose one job that you are interested in.</legend><br />
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <label for="web_dev">Web Developer</label>
+                    <input type="radio" name="job_type" id="web_dev" value="Web Developer" /><br />
+                </td>
+                <td>
+                    <label for="mobile_dev">Mobile Applications Developer</label>
+                    <input type= "radio" name="job_type" id="mobile_dev" value="Mobile Applications Developer" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="soft_dev">Software Developer</label>
+                    <input type="radio" name="job_type" id="soft_dev" value="Software Developer" /><br />
+                </td>
+                <td>
+                    <label for="cyber">Cybersecurity Strategist</label>
+                    <input type="radio" name="job_type" id="cyber" value="Cybersecurity Strategist" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hacker">Ethical Hacker</label>
+                    <input type="radio" name="job_type" id="hacker" value="Ethical Hacker" /><br />
+                </td>
+                <td>
+                    <label for="data">Data Scientist</label>
+                    <input type="radio" name="job_type" id="data" value="Data Scientist" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="database">Database Analyst</label>
+                    <input type="radio" name="job_type" id="database" value="Database Analyst" /><br />
+                </td>
+                <td>
+                    <label for="2d_ani">2D Animator</label>
+                    <input type="radio" name="job_type" id="2d_ani" value="2D Animator" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="3d_ani">3D Animator</label>
+                    <input type="radio" name="job_type" id="3d_ani" value="3D Animator" /><br />
+                </td>
+                <td>
+                    <label for="3d_model">3D Modeler</label>
+                    <input type="radio" name="job_type" id="3d_model" value="3D Modeler" /><br />
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Button -->
+    <button type="button" id="downloadButton">Submit</button>
+
+    <!-- About -->
+    <section class = "section6" id = "About">
+        <h2>About International Computer Company</h2>
+        <p>
+            At the heart of innovation and technological excellence stands the International Computer Company (ICC). With a history spanning over three decades, ICC has consistently pushed the boundaries of technology and computing. Our journey began in a modest garage, where a group of visionary tech enthusiasts shared a dream to revolutionize the digital landscape. Since then, ICC has evolved into a global tech powerhouse, leading the charge in cutting-edge solutions and groundbreaking innovations. Headquartered in the vibrant tech hub of Silicon Valley, our commitment to excellence and diversity has enabled us to attract top talents from around the world.
+        </p><br />
+        <h2>The ICC Team</h2>
+        <p>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <img src="team1.jpg" alt="Team 1">
+                </td>
+                <td>
+                    <img src="team2.jpg" alt="Team 2">
+                </td>
+                <td>
+                    <img src="team3.jpg" alt="Team 3">
+                </td>
+            </tr>
+        </table><br />
+        </p><br />
+        <h2>Innovating for a Better Tomorrow</h2>
+        <p>
+            ICC's mission is simple yet profound: to innovate for a better tomorrow. From our state-of-the-art headquarters in the heart of Silicon Valley, we drive transformation across industries through our dedication to research, development, and technological advancements. Our diverse team of experts collaborates tirelessly to create solutions that shape the future. We are more than just a company; we're a community of thinkers, dreamers, and doers united by a shared passion for innovation. Join us on this journey to explore the endless possibilities of technology and be part of the ICC legacy.
+        </p>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <img src="mission1.jpg" alt="Mission 1">
+                </td>
+                <td>
+                    <img src="mission2.jpg" alt="Mission 2">
+                </td>
+                <td>
+                    <img src="mission3.jpg" alt="Mission 3">
+                </td>
+            </tr>
+        </table><br />
+    </section>
+
+    <!-- Contact -->
+    <section class = "section7" id = "Contact">
+        <h2>Visit our official social media accounts for more updates</h2>
+        <p>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <a href="https://www.facebook.com/">
+                        <img src="fblogo.png" alt="Facebook">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://twitter.com/?lang=en">
+                        <img src="twtlogo.png" alt="Twitter">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/">
+                        <img src="iglogo.png" alt="Instagram">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        </p><br />
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Dwyn Delos Reyes | dwyndelosreyes@gmail.com
+    </footer>
+    
+<script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+    // Get the input values
+    var surname = document.getElementById('surname').value;
+    var firstname = document.getElementById('firstname').value;
+    var middlename = document.getElementById('middlename').value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
+    var age = document.getElementById('age').value;
+    var birthdate = document.getElementById('birthdate').value;
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+    var landline = document.getElementById('landline').value;
+    var address = document.getElementById('address').value;
+
+    var jobType = document.querySelector('input[name="job_type"]:checked').value;
+
+    // Create a text file content
+    var textContent = "Surname: " + surname + "\n" +
+                      "Firstname: " + firstname + "\n" +
+                      "Middle Name: " + middlename + "\n" +
+                      "Gender: " + gender + "\n" +
+                      "Age: " + age + "\n" +
+                      "Birthdate: " + birthdate + "\n" +
+                      "Email Address: " + email + "\n" +
+                      "Mobile Number: " + mobile + "\n" +
+                      "Landline Number: " + landline + "\n" +
+                      "Address: " + address + "\n" +
+                      "Job Type: " + jobType;
+
+    // Create a Blob containing the text content
+    var blob = new Blob([textContent], { type: "text/plain" });
+
+    // Create a download link
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'job_application_response.txt';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+
+    // Trigger a click event on the link to initiate download
+    a.click();
+
+    // Clean up
+    document.body.removeChild(a);
+});
+</script>
+</body>
+</html>
