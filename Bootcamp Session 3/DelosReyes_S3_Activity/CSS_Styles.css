@@ -1,0 +1,189 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 2;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #f4fde3, #efddb9);
+    color: #000;
+    text-align: center;
+}
+
+header {
+    background-image: url('tires.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+h1 {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+/* Custom Styles for Different Sections */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Type of cars design */
+.car-list li {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 28px;
+    margin: 3px;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.car-list-item {
+    text-align: center;
+    margin: 5px;
+}
+
+.car-list-item img {
+    width: 600px;
+    height: 550px;
+    border: 3px solid #483C32;
+    object-fit: cover; /* Maintain image aspect ratio */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+.car-list-item p {
+    margin-top: 3px;
+}
+
+.car-list-item img:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+}
+
+/* Car brands design */
+.brand li {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    margin: 3px;
+}
+
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.brand-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.toyota,
+.honda,
+.nissan,
+.mitsubishi {
+    text-align: center;
+    margin: 10px;
+    width: 35%; /* Reduce width to make them smaller */
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden; /* Hide overflowing parts of the image when zoomed */
+}
+
+.toyota img,
+.honda img,
+.nissan img,
+.mitsubishi img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain image aspect ratio and fit within the container */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+.toyota img:hover,
+.honda img:hover,
+.nissan img:hover,
+.mitsubishi img:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+}
+
+
+.brand-item p {
+    margin-top: 5px;
+}
+
+.brand-item img:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+}
+
+/* History section */
+.history-section {
+    background-image: url('tires2.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+.history-section h2{
+    color: #ffffff;
+}
+
+.history {
+    text-align: center;
+}
+
+.history-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.history-item img {
+    width: 300px;
+    height: 250px;
+    border: 3px solid #483C32;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin: 0%;
+}

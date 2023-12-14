@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 3</title>
+    <link rel="stylesheet" href="CSS_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Cars Page</h1>
+    </header>
+
+    <!-- Top part -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#types">Types of Cars</a></li>
+            <li><a href="#brands">Popular Car Brands</a></li>
+            <li><a href="#history">History of Cars</a></li>
+        </ul>
+    </nav>
+    <div class="main-background">
+        <main>
+    
+    <!-- Introduction -->
+            <section class="section" id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    In our dedicated webpage, we aim to delve deep into the captivating realm of automobiles. Cars, with their rich history and ever-evolving technologies, have not only transformed the way we move from one place to another but have also become an indispensable facet of our daily existence. From the early days of horseless carriages to the modern, sleek, and environmentally conscious vehicles, we'll explore the significant milestones and innovations that have shaped the automotive industry. Our goal is to provide you with comprehensive insights, from the mechanics that power these vehicles to the societal and environmental impact they have today. Join us on this journey as we celebrate the incredible world of cars.
+                </p>
+                <iframe width="750" height="421" src="https://www.youtube.com/embed/ZLQpFzIBv_Q?si=GQwJCtmrSZA0uJXp" frameborder="1" allowfullscreen></iframe>
+            </section>
+            
+
+    <!-- Types of Cars -->
+            <section class="section" id="types">
+                <h2>Types of Cars</h2>
+                <p>
+                    There exists a diverse spectrum of automobile types, each designed to cater to distinct needs and preferences. From compact and fuel-efficient models tailored for urban commuting, to robust and off-road-ready SUVs ideal for adventurous exploration, the variety is extensive. Sports cars, with their sleek aesthetics and high-performance engines, beckon to enthusiasts seeking exhilarating speed. Sedans pamper their occupants with lavish interiors and cutting-edge technology. The world of automobiles is as diverse as the people who drive them, allowing individuals to find the perfect match for their unique lifestyles and requirements.
+                </p>
+                <ul class="car-list">
+                    <li class="car-list-item">
+                        <a href="https://www.jdpower.com/cars/shopping-guides/what-is-a-sedan">
+                            <img src="sedan.jpg" alt="Sky Blue Sedan">
+                        </a>
+                        <p>Sedans</p>
+                    </li>
+                    <li class="car-list-item">
+                        <a href="https://www.continental-tires.com/products/b2c/tire-knowledge/what-is-an-suv/">
+                            <img src="suv.jpg" alt="Black SUV with roof rack">
+                        </a>
+                        <p>SUVs</p>
+                    </li>
+                    <li class="car-list-item">
+                        <a href="https://www.cazoo.co.uk/the-view/buying/what-is-a-hatchback/">
+                            <img src="hatchback.jpg" alt="Red Hatchback">
+                        </a>
+                        <p>Hatchbacks</p>
+                    </li>
+                    <li class="car-list-item">
+                        <a href="https://www.jdpower.com/cars/shopping-guides/what-makes-a-car-a-sports-car">
+                            <img src="sports_car.jpg" alt="Black Sports Car">
+                        </a>
+                        <p>Sports Cars</p>
+                    </li>
+                </ul>
+            </section>            
+    
+    <!-- Car Brands -->
+            <section class="section" id="brands">
+                <h2>Popular Car Brands</h2>
+                <p>
+                    Among the most renowned car manufacturers in the automotive industry are Toyota, Honda, Nissan, and Mitsubishi. Toyota, a global giant, is celebrated for its reliability and innovation, producing a wide range of vehicles. Honda, known for its quality and performance, offers a diverse lineup, including popular models like the Civic and Accord. Nissan, a pioneer in electric vehicle technology, provides stylish and practical choices, while Mitsubishi produced its unique blend of technology and affordability. These brands have left a mark on the automotive landscape, consistently delivering vehicles that meet a wide array of customer preferences.
+                </p>
+                <ul class="brand">
+                    <li class="toyota">
+                        <a href="https://www.toyota.com">
+                            <img src="Toyota.png" alt="Toyota Logo">
+                        </a>
+                    </li>
+                    <li class="honda">
+                        <a href="https://www.honda.com">
+                            <img src="Honda.png" alt="Honda Logo">
+                        </a>
+                    </li>
+                    <li class="nissan">
+                        <a href="https://www.nissanusa.com">
+                            <img src="Nissan.png" alt="Nissan Logo">
+                        </a>
+                    </li>
+                    <li class="mitsubishi">
+                        <a href="https://www.mitsubishicars.com">
+                            <img src="mitsubishi.png" alt="Mitsubishi Logo">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+    
+    <!-- History of cars section -->
+            <section class="history-section" id="history">
+                <h2>History of Cars</h2>
+                    <p>The roots of the automotive world trace back to the late 19th century, a pivotal era when the first gasoline-powered vehicles emerged. These early inventions laid the groundwork for a revolutionary transformation in transportation. Since then, the automotive industry has undergone a remarkable evolution, yielding vehicles that are not only faster but also safer and more fuel-efficient. This journey through time showcases the relentless innovation and engineering prowess that has propelled automobiles from their humble origins to the sophisticated, technologically advanced, and environmentally conscious machines we have today. It's a testament to human ingenuity and the enduring quest for more efficient and sustainable mobility.</p>
+                <div class="history">
+                    <div class="history-item">
+                        <img src="oldcar1.jpg" alt="Historical Car">
+                    </div>
+                    <div class="history-item">
+                        <img src="oldcar2.jpg" alt="Historical Car">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Dwyn Delos Reyes | dwyndelosreyes@gmail.com
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
