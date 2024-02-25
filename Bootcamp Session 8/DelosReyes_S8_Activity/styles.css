@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Services */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 5px;
+    padding-top: 40px;
+}
+
+.card {
+    background: #5e4930;
+    color: aliceblue;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+    transition: transform 0.2s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* Home */
+#Home {
+    background-image: url('events.jpg');
+    background-position: center;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+    border-bottom: solid #000000;
+}
+
+#Home h1 {
+    font-size: 60px;
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: #5e4930;
+    color: white;
+    box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.2);
+}
+
+/* Managers */
+#Managers {
+    color: #000000;
+    background-image: linear-gradient(to bottom, #f0f1f0, #cfcfcf);
+}
+
+/* Contact section */
+#contact {
+    background-color: #5c5c5c;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#contact h6 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    margin: 0;
+}
+
+.contact-item {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+}
+
+.contact-item img {
+    width: 35%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-item:hover img {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 0%;
+    background-color: #333;
+    color: white;
+    margin: 0%;
+}
