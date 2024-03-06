@@ -12,6 +12,14 @@
     flex-direction: row;
 }
 
+.card img {
+    transition: transform 0.2s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
 /* Footer */
 footer {
     text-align: center;
